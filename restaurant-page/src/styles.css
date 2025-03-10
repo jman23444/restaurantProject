@@ -1,0 +1,170 @@
+
+:root {
+    /* General Styling */
+    --text-font-family: 'poppins', Inter;
+    --text-heading-color: #000;
+    --text-style: normal;
+    /* Colors */
+    --off-black: #272727;
+    --green: #39DB4A;
+    --secondary-green: #90BD95;
+    --orange: #FF6868;
+    --yellow: #ffe605;
+    --grey: #807E7E;
+    /* H1 Specific Styling */
+    --h1-size: 54px;
+    --h1-weight: 800;
+    --h1-line-height: 145.523%; /* 90.224px */
+    /* H2 Specific Styling */
+    --h2-size: 48px;
+    --h2-weight: 700;
+    --h2-line-height: 131.523%; /* 78.914px */
+    /* H4 Specific Styling */
+    --h4-size: 26px;
+    --h4-weight: 600;
+    --h4-line-height: normal;
+    /* Basic P text Styling */
+    --p-color: #555;
+    --p-size: 18px;
+    --p-font-weight: 500;
+    --p-line-height: 159%; /* 41.34px */
+    /* PD & MRG STYLING */
+    --section-mrg: 32px;
+    --section-pd: 32px;
+}
+
+h1 {
+    font-family: var(--text-font-family);
+    font-style: var(--text-style);
+    font-size: var(--h1-size);
+    font-weight: var(--h1-weight);
+    line-height: var(--h1-line-height);
+}
+
+p {
+    font-family: var(--text-font-family);
+    font-style: var(--text-style);
+    font-size: var(--p-size);
+    font-weight: var(--p-font-weight);
+    line-height: var(--p-line-height);
+}
+
+/* Buttons */
+
+.primary-btn {
+    width: 179px;
+    height: 60px;
+    flex-shrink: 0;
+    border-radius: 40px;
+    background: var(--green);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    color: #fff;
+}
+
+
+/* Nav Styling */
+
+#navbar {
+    padding: var(--section-pd);
+    display: flex;
+    justify-content: space-between;
+}
+
+#navbar img {
+    width: 200px; 
+    height: auto;
+}
+
+#nav-menu-items {
+    display: flex;
+    gap: 32px;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-btn {
+    display: flex; 
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+    color: var(--p-color);
+}
+
+#additional-controls {
+    display: flex;
+    gap: 16px;
+    color: var(--p-color);
+    justify-content: center;
+    align-items: center;
+}
+
+/* Hero Styling */
+
+#hero {
+    padding: var(--section-pd);
+    display: flex;
+    gap: 32px;
+    align-items: center;
+}
+
+#hero img {
+    width: calc(50% - 32px);
+    height: auto;
+}
+
+#text-btn-section {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    align-items: flex-start;
+}
+
+.highlight-green {
+    color: var(--green);
+}
+
+#hero-subheading {
+    color: var(--grey);
+}
+
+#hero-btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+[id="watch-now-btn"] p {
+    color: #4D4D4D;
+}
+
+#play-btn-container {
+    width: 64px;
+    height: 64px;
+    flex-shrink: 0;
+    fill: #FFF;
+    filter: drop-shadow(6px 27px 34px rgba(0, 0, 0, 0.10));
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    border-radius: 90px;
+    border: 1px solid var(--grey);
+}
+
+/* Popular Categories Section */
+
+.cf-subheading {
+    color: #FF6868;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 3.5px;
+    text-transform: uppercase;
+}
+
+
