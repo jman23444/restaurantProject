@@ -8,14 +8,22 @@ module.exports = {
     filename: "main.js",
     path: path.resolve(__dirname, "dist"),
     clean: true,
+    publicPath: "/", 
+    assetModuleFilename: "assets/[name][ext]", 
   },
   devtool: "eval-source-map",
   devServer: {
-    watchFiles: ["./src/template.html"],
+    watchFiles: ["./src/template.html", "./src/media_files/**/*"], 
+    static: {
+      directory: path.join(__dirname, "dist"),
+      publicPath: "/",
+    },
+    hot: true,
   },
   plugins: [
     new HtmlWebpackPlugin({
       template: "./src/template.html",
+      publicPath: "/",
     }),
   ],
   module: {
@@ -28,12 +36,19 @@ module.exports = {
         test: /\.(png|jpg|jpeg|gif|svg)$/i,
         type: "asset/resource",
         generator: {
-          filename: "assets/[name][ext]",
+          filename: "assets/[name][ext]", 
         },
       },
       {
         test: /\.html$/i,
-        use: ["html-loader"],
+        use: [
+          {
+            loader: "html-loader",
+            options: {
+              sources: true, 
+            },
+          },
+        ],
       },
     ],
   },

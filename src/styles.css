@@ -197,6 +197,8 @@ p {
     display: flex;
     gap: 32px;
     overflow-x: scroll;
+    align-items: center;
+    justify-content: center;
     width: 100%;
     scrollbar-width: none;
     -ms-overflow-style: none;
@@ -231,6 +233,16 @@ p {
 
 #special-dishes {
     padding: var(--section-pd);
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 32px;
+    align-items: center;
+    justify-content: center
+}
+
+#special-dishes h2 {
+    text-align: center;
 }
 
 .salad-container {
