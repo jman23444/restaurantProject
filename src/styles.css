@@ -80,6 +80,74 @@ p {
     color: #fff;
 }
 
+/* Navbar Styling  */
+
+#navbar {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: #f8f8f8;
+}
+
+#nav-menu-items {
+    display: flex;
+    gap: 20px;
+}
+
+#nav-menu-items p,
+.nav-btn p {
+    cursor: pointer;
+    padding: 10px;
+    font-size: 16px;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.nav-btn {
+    background: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.nav-btn svg {
+    transition: transform 0.3s ease;
+}
+
+.nav-btn:hover svg {
+    transform: rotate(180deg);
+}
+
+#nav-menu-items p:hover,
+.nav-btn p:hover {
+    color: #5FE26C; /* Highlight color */
+}
+
+.active {
+    color: #5FE26C;
+    font-weight: bold;
+}
+
+section {
+    display: block;
+}
+
+footer {
+    margin-top: auto;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+#content > div {
+    flex: 1;
+}
+
 
 /* Nav Styling */
 
